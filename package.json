@@ -1,5 +1,5 @@
 {
-  "name": "whatsapp",
+  "name": "ajzchat_whatsapp",
   "version": "1.0",
   "dependencies": {
     "@pedroslopez/moduleraid": "^5.0.2",
