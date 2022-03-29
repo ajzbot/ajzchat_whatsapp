@@ -1000,7 +1000,7 @@ class Client extends EventEmitter {
 
         const createRes = await this.pupPage.evaluate(async (name, participantIds) => {
             const participantWIDs = participantIds.map(p => window.Store.WidFactory.createWid(p));
-            const id = window.Store.genId();
+            const id = window.Store.MsgKey.newId();
             const res = await window.Store.GroupUtils.sendCreateGroup(name, participantWIDs, undefined, id);
             return res;
         }, name, participants);
